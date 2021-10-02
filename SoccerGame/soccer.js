@@ -422,7 +422,6 @@ var createApp = function(canvas) {
                 c.drawImage(cookie, x2, y2, 75, 75);
                 setTimeout(function go(){
                     x2 = 480;
-                    console.log(x_m)
                     x_m = 460;
                     y2 = 350;
                     document.getElementById("correct").innerHTML = "No Shot";},2000)
