@@ -1,0 +1,364 @@
+html{
+    min-width: 100%;
+}
+
+body{
+    background-image: url('https://cdn4.vectorstock.com/i/1000x1000/93/53/soccer-goal-on-field-background-vector-5279353.jpg');
+    background-size:100% 100%;
+    background-repeat:no-repeat;
+    padding:0px;
+    margin:0px;
+    height: 100%;
+    width: 100%;
+
+}
+
+
+
+
+#colorstrip{
+    width: 100%;
+    height: 80px;
+    position: absolute;
+    background-color: green;
+    bottom: 1px;
+    z-index: 1;
+
+}
+
+.kick1{
+    background-color: transparent;
+    border: none;
+    border-radius:80%;
+    padding: 15px 15px;
+    position:absolute;
+    top: 245px;
+    left: 420px;
+    right: -150px;
+    text-align: center;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    z-index: 2;
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+.kick2{
+    background-color: transparent;
+    border: none;
+    border-radius:80%;
+    padding: 15px 15px;
+    position:absolute;
+    top: 245px;
+    left: 960px;
+    right: -150px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    z-index: 2;
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+.kick3{
+    background-color: transparent;
+    border: none;
+    border-radius:80%;
+    padding: 15px 15px;
+    position:absolute;
+    top: 342px;
+    left: 965;
+    right: 38%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    z-index: 2;
+    margin: 4px 2px;
+    cursor: pointer;
+
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+.kick4{
+    background-color: transparent;
+    border: none;
+    border-radius:80%;
+    padding: 15px 15px;
+    position:absolute;
+    top: 342px;
+    left: 420px;
+    right: -150px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    z-index: 2;
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+.kick5{
+    background-color: transparent;
+    border: none;
+    z-index: 2;
+    border-radius:80%;
+    padding: 15px 15px;
+    position:absolute;
+    top: 245px;
+    left: 680px;
+    right: -150px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+.score{
+    position: relative;
+    top: 10px;
+    left: 550px;
+    right: 600px;
+    bottom: -300px;
+    font-size: 50px;
+    color: white;
+}
+
+#canvas{
+    border: 1px solid blue;
+    z-index: -1;
+}
+
+input[type=text] {
+    width: 25%;
+    background: lightskyblue;
+    border: lightskyblue;
+    border-bottom: 2px solid white;
+    padding: 12px 15px;
+    box-sizing: content-box;
+
+}
+
+#math{
+    position: absolute;
+    left: 25%;
+    top: 15%;
+    font-size: 60px;
+    text-align: center;
+    z-index: 2;
+    color: white;
+
+}
+
+#a{
+    position: absolute;
+    left: 38%;
+    top: 17%;
+    z-index: 2;
+    width: 28px;
+
+}
+
+#cm{
+    position: absolute;
+    left: 10%;
+    top: 85%;
+    z-index: 2;
+    color: white;
+    font-size: 60px;
+
+}
+
+#player{
+    position: absolute;
+    left: 60%;
+    top: 85%;
+    z-index: 2;
+    color: white;
+    font-size: 60px;
+
+}
+
+.update{
+    background: transparent;
+    border: none;
+    position: absolute;
+    left: 46%;
+    top: 15%;
+    z-index: 2;
+}
+
+
+#cookie1{
+    height: 7%;
+    width:5%;
+    position: absolute;
+    left: 55%;
+    top:17%;
+    z-index: 2;
+
+}
+
+#cookie2 {
+    height: 7%;
+    width: 5%;
+    position: absolute;
+    left: 60%;
+    top: 17%;
+    z-index: 2;
+}
+
+#cookie3 {
+    height: 7%;
+    width: 5%;
+    position: absolute;
+    left: 65%;
+    top: 17%;
+    z-index: 2;
+}
+
+#cookies{
+    display: none;
+}
+
+.btn1{
+    position: absolute;
+    left: 50%;
+    bottom: 1%;
+}
+
+.btn2{
+    position: absolute;
+    left: 55%;
+    bottom: 1%;
+}
+
+.btn3{
+    position: absolute;
+    left: 60%;
+    bottom: 1%;
+}
+
+.btn4{
+    position: absolute;
+    left: 65%;
+    bottom: 1%;
+}
+
+.btn5{
+    position: absolute;
+    left: 70%;
+    bottom: 1%;
+}
+
+.glow {
+    font-size: 80px;
+    color: #fff;
+    text-align: center;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+#timer{
+    font-size: 50px;
+    color: black;
+    position: absolute;
+    top: 8%;
+    left: 5%;
+    z-index: 2;
+
+}
+
+@-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+}
+
+@-webkit-keyframes glow2 {
+    from {
+        text-shadow: 0 0 10px #a0e899, 0 0 20px #89ce63, 0 0 30px #5dd320, 0 0 40px #1ed217, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #b5e7b1, 0 0 40px #a5e885, 0 0 50px #8ae18a, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+
+
+}
+
+#content1, #content2, #content3, #content4{
+    font-size: 35px;
+    color: white;
+    font-weight: bold;
+}
+
+#title1, #title2{
+    font-size: 50px;
+    color: #fff;
+    text-align: center;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: absolute; /* Stay in place */
+    top:10%;
+    left:50%;
+    padding-top: 50px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    z-index: 3;
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: lightskyblue;
+    margin: auto;
+    padding: 75px;
+    border: 1px solid #888;
+    width: 25%;
+    z-index: 3;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}

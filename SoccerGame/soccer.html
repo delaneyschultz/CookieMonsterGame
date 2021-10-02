@@ -1,0 +1,79 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script src="soccer.js"></script>
+    <link rel="stylesheet" href="soccer.css">
+
+</head>
+
+
+<h1 class="glow">Cookie Monster Shootout</h1>
+
+
+<!-- Trigger/Open The Modal -->
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <p id="title1">Your Score</p>
+        <p id="content1"></p><p id="content2"></p><br>
+        <p id="title2">High Score</p>
+        <p id="content3"></p><p id="content4"></p>
+    </div>
+
+</div>
+
+<span id="timer"></span>
+
+<p id = "correct" style="display:none" ></p>
+<input type="hidden" id="num" value="0" />
+<input type="hidden" id="num2" value="0" />
+<input type="hidden" id="rnd" value="0" />
+<input type="hidden" id="num3" value="0" />
+<input type="hidden" id="count" value="0" />
+
+<body>
+
+
+<div id = "math">
+    <label for="a" id="prob"></label><label for="b" id="equal">  =</label><p id="b"></p>
+</div>
+
+<div id = "math2">
+    <input type="text" id="a" name="a">
+    <button class = "update" onclick="go()">
+        <img src="https://media2.giphy.com/media/kd3MNAQLU2EzaKiwwM/giphy.gif?cid=6c09b952ieypq54u2wgk8srwt0ut78e5vbbg5iz0klxxl785&rid=giphy.gif&ct=s" style = "width: 80px; height: 80px;"></img>
+    </button>
+</div>
+
+<h2 id="cm">Cookie Monster:</h2>
+<h2 id="player">Player:</h2>
+<h3 id="cookies">Cookies Collected: </h3>
+
+
+<button class = "kick1" id="kick1"> 1 </button>
+<button  class = "kick2" id="kick2"> 2 </button>
+<button  class = "kick3" id="kick3"> 3 </button>
+<button  class = "kick4" id="kick4"> 4 </button>
+<button  class = "kick5" id="kick5"> 5 </button>
+
+
+<img id= "cookie1" src="https://lipstickandlemonheads.com/wp-content/uploads/2020/11/image.gif" style="display: none">;
+<img id= "cookie2" src="https://lipstickandlemonheads.com/wp-content/uploads/2020/11/image.gif" style="display: none">;
+<img id= "cookie3" src="https://lipstickandlemonheads.com/wp-content/uploads/2020/11/image.gif" style="display: none">;
+
+<div style="position:fixed; top:3em; left:0em;">
+
+    <canvas id = "myCanvas" width="1000" height="420" style="position: relative; top: 165px; left: 200px; right: 100px; bottom: -400px;"></canvas>
+
+</div>
+
+
+<div id="colorstrip"></div>
+
+
+</body>
+</html>

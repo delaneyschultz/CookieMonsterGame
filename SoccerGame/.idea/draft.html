@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Delaney Schultz</title>
+</head>
+
+
+<body>
+
+<h1>
+    Delaney Schultz
+</h1>
+
+<img src="https://riceowls.com/images/2021/8/6/13_Schultz_Delaney_2021.jpg?width=100" title = "Delaney Schultz">
+<br>
+<p>
+    My last trip was to Sanibel, Florida with my family for the fourth of July. We used to go every single summer when I was little, but this was the first time we have been back in about 10 years. Sanibel has some of the best shells in Florida so I had a great time walking on the beach looking for shells and enjoying the ocean.
+</p>
+<p>
+    <b>Github Username:</b> delaneyschultz
+    <br>
+    <b>
+        Favorite Links:
+    </b>
+    <a href="http://twitter.com">Twitter</a>
+    <a href="espn.com">ESPN</a>
+    <a href="https://www.instagram.com">Instagram</a>
+
+</p>
+
+<h4>Comment Box</h4>
+<textarea id="commentbox" name="commentbox" rows="4" cols="50">
+
+</textarea>
+
+<div id="dvCountDown" style="display: none">
+
+</div>
+
+<span id="timer"></span>
+
+<script type = "text/javascript">
+
+    var f = function(a){
+        var msg;
+        msg = "The page will redirect when the counter reaches zero"
+        alert(msg);
+    }
+    setTimeout(f,5000);
+
+    var x = 10;
+    var countDown = setInterval(timer,1000);
+
+    function timer()
+    {
+        x = x - 1;
+        if (x <= 0)
+        {
+            clearInterval(countDown);
+            location.replace("https://www.rice.edu");
+            return;
+        }
+        document.getElementById("timer").innerHTML=x + " secs";
+    }
+
+
+
+</script>
+</body>
+</html>

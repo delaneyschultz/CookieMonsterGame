@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+</head>
+<body>
+
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<h1 id="h1">
+    Welcome to Cookie Monster Shootout!
+</h1>
+
+<h2 id="h2">
+    Directions
+</h2>
+<p id="directions">
+    In order to be able to shoot on the cookie monster, you need to put 3 cookies
+    in the cookie jar. In order to get a cookie in the cookie jar, you have to answer
+    a math question right and then click on the cookie jar. Once you answer 3 questions
+    right, you will see the cookie appear on the penalty spot. Then, you will be able
+    to click on one of the numbers (1,2,3,4,5) in order to place your shot. If you score,
+    you get a point. If the cookie monster saves it, he gets a point.
+</p>
+<button class = "game"><a href = "soccer.html" > Start Game </a> </button>
+<img id="monster" src="https://i.pinimg.com/originals/79/8e/01/798e014e9faca457001cfd277ea425e5.png">
+
+</body>
+
+<style>
+    body {
+        background-color: lightblue;
+    }
+    .game{
+        background-color: hotpink;
+        border: none;
+        color: white;
+        position:absolute;
+        top: 85%;
+        left:20%;
+        border-radius:30px;
+        padding: 20px 20px;
+        text-align: center;
+        font-size: 30px;
+
+    }
+    a{
+        text-decoration: none;
+        color: white;
+    }
+    #h1{
+        font-size: 80px;
+        color: #fff;
+        text-align: center;
+        animation: glow 1s ease-in-out infinite alternate;
+    }
+    #h2{
+        font-size: 50px;
+        color: white;
+        text-decoration-thickness: 10px;
+        position: absolute;
+        top: 28%;
+        left: 20%;
+    }
+    #directions{
+        width: 680px;
+        font-size: 28px;
+        text-decoration-thickness: 10px;
+        text-align: center;
+        position: absolute;
+        color: white;
+        top: 40%;
+        left: 7%;
+    }
+    #monster{
+        position: absolute;
+        top: 25%;
+        left: 60%;
+        width: 400px;
+        height: 600px;
+    }
+    @-webkit-keyframes glow {
+        from {
+            text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+        }
+
+        to {
+            text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+        }
+    }
+
+</style>
+</html>
